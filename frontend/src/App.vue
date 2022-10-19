@@ -30,6 +30,7 @@
                     style="margin-left:10px; font-size:20px; cursor:pointer;"
                     ></span> 
                 <v-spacer></v-spacer>
+
             </v-app-bar>
 
             <v-navigation-drawer app clipped flat v-model="sideBar">
@@ -46,6 +47,7 @@
                     >
                         Order
                     </v-list-item>
+
 
 
                     <v-list-item
@@ -101,6 +103,7 @@
                                 </v-btn>
                             </v-card-actions>
                         </v-card>
+
                         <v-card
                             class="mx-auto"
                             style="height:300px; width:300px; margin-bottom:20px;"
@@ -153,6 +156,7 @@ export default {
     async created() {
       var path = document.location.href.split("#/")
       this.urlPath = path[1];
+
     },
 
     mounted() {
@@ -170,7 +174,7 @@ export default {
         },
         goHome() {
             this.urlPath = null;
-        }
+        },
     }
 };
 </script>
